@@ -1,0 +1,13 @@
+PODS:
+  - YYImage (0.9.3)
+  - YYText (0.9.19)
+
+DEPENDENCIES:
+  - YYImage
+  - YYText
+
+SPEC CHECKSUMS:
+  YYImage: f831ce12f2bf5ce35137f6079a4b9cb4e91eb0ef
+  YYText: b823b71b99b526c4a81029ecb59f3d8172ed5c9a
+
+COCOAPODS: 0.39.0
