@@ -13,7 +13,7 @@ public let kSpeedChatTextKeyPhone = "phone"
 public let kSpeedChatTextKeyURL = "URL"
 
 class TextParser: NSObject {
-    class func parseText(text: String, font: UIFont, fontSize: CGFloat) -> NSMutableAttributedString? {
+    class func parseText(text: String, font: UIFont) -> NSMutableAttributedString? {
         if text.characters.count == 0 {
             return nil
         }
@@ -27,7 +27,7 @@ class TextParser: NSObject {
         //匹配 URL
         self.enumerateURLParser(attributedText)
         //匹配 [表情]
-        self.enumerateEmotionParser(attributedText, fontSize: fontSize)
+        self.enumerateEmotionParser(attributedText, fontSize: font.pointSize)
         
         return attributedText
     }

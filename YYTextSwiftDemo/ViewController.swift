@@ -25,12 +25,13 @@ class ViewController: UIViewController {
         
         self.setupYYLabel(testString, targetSize: targetSize, font: targetFont)
         self.setupUILabel(testString, targetSize: targetSize, font: targetFont, maxWidth: maxWidth)
-        self.contentScrollView.contentSize = CGSizeMake(320, self.rightUILabel.height + 200)
+        self.contentScrollView.contentSize = CGSizeMake(UIScreen.mainScreen().bounds.size.width, self.rightUILabel.height + 200)
+        self.contentScrollView.size = UIScreen.mainScreen().bounds.size
     }
     
     func setupYYLabel(text: String, targetSize: CGSize, font: UIFont) {
         //解析的文字
-        let attributedString = TextParser.parseText(text, font: font, fontSize: fontSize)!
+        let attributedString = TextParser.parseText(text, font: font)!
         //布局
         let modifier = TextLinePositionModifier(font: font)
         
@@ -54,6 +55,7 @@ class ViewController: UIViewController {
         
         let textLayout = YYTextLayout(container: textContainer, text: attributedString)
         self.leftYYLabel.textLayout = textLayout
+        self.leftYYLabel.width = textLayout.textBoundingSize.width
         
         let contentHeight = modifier.heightForLineCount(Int(textLayout.rowCount))
         self.leftYYLabel.height = contentHeight
