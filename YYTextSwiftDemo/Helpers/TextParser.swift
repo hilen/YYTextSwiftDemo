@@ -119,7 +119,7 @@ class TextParser: NSObject {
             }
             
             let emoText = NSMutableAttributedString.yy_attachmentStringWithEmojiImage(image, fontSize: fontSize)
-            attributedText.replaceCharactersInRange(range, withAttributedString: emoText)
+            attributedText.replaceCharactersInRange(range, withAttributedString: emoText!)
             
             emoClipLength += range.length - 1
         }

@@ -1,13 +1,15 @@
 PODS:
-  - YYImage (0.9.3)
-  - YYText (0.9.19)
+  - YYImage (1.0.1):
+    - YYImage/Core (= 1.0.1)
+  - YYImage/Core (1.0.1)
+  - YYText (1.0.3)
 
 DEPENDENCIES:
   - YYImage
-  - YYText
+  - YYText (~> 1.0.3)
 
 SPEC CHECKSUMS:
-  YYImage: f831ce12f2bf5ce35137f6079a4b9cb4e91eb0ef
-  YYText: b823b71b99b526c4a81029ecb59f3d8172ed5c9a
+  YYImage: b41b45bc5f32bfcdf67bdfb9c09da9e9832357c0
+  YYText: 3050159192035d7f232b537ce76668aac2e2bd8b
 
 COCOAPODS: 0.39.0

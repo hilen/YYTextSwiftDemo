@@ -1,4 +1,4 @@
-YYImage <a href="#中文介绍">中文介绍</a>
+YYImage
 ==============
 [![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/ibireme/YYImage/master/LICENSE)&nbsp;
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)&nbsp;
@@ -133,17 +133,17 @@ Installation
 ### CocoaPods
 
 1. Update cocoapods to the latest version.
-1. Add `pod "YYImage"` to your Podfile.
-2. Run `pod install` or `pod update`.
-3. Import \<YYImage/YYImage.h\>
-
+2. Add `pod 'YYImage'` to your Podfile.
+3. Run `pod install` or `pod update`.
+4. Import \<YYImage/YYImage.h\>.
+5. Notice: it doesn't include WebP subspec by default, if you want to support WebP format, you may add `pod 'YYImage/WebP'` to your Podfile.
 
 ### Carthage
 
 1. Add `github "ibireme/YYImage"` to your Cartfile.
 2. Run `carthage update --platform ios` and add the framework to your project.
-3. Import \<YYImage/YYImage.h\>
-4. Notice: carthage framework doesn't include webp component, if you want to support webp, use cocoapods or install manually.
+3. Import \<YYImage/YYImage.h\>.
+4. Notice: carthage framework doesn't include WebP component, if you want to support WebP format, use CocoaPods or install manually.
 
 ### Manually
 
@@ -158,8 +158,8 @@ Installation
 	* Accelerate
 	* MobileCoreServices
 	* libz
-4. Add `Vendor/WebP.framework`(static library) to your Xcode project if you want to support webp.
-5. Import `YYImage.h`.
+4. Import `YYImage.h`.
+5. Notice: if you want to support WebP format, you may add `Vendor/WebP.framework`(static library) to your Xcode project.
 
 
 Documentation
@@ -170,7 +170,7 @@ You can also install documentation locally using [appledoc](https://github.com/t
 
 Requirements
 ==============
-This library requires a deployment target of iOS 6.0 or greater.
+This library requires `iOS 6.0+` and `Xcode 7.0+`.
 
 
 License
@@ -313,22 +313,22 @@ YYImage: 功能强大的 iOS 图像框架。<br/>
 ### CocoaPods
 
 1. 将 cocoapods 更新至最新版本.
-1. 在 Podfile 中添加 `pod "YYImage"`。
-2. 执行 `pod install` 或 `pod update`。
-3. 导入 \<YYImage/YYImage.h\>。
-
+2. 在 Podfile 中添加 `pod 'YYImage'`。
+3. 执行 `pod install` 或 `pod update`。
+4. 导入 \<YYImage/YYImage.h\>。
+5. 注意：pod 配置并没有包含 WebP 组件, 如果你需要支持 WebP，可以在 Podfile 中添加 `pod 'YYImage/WebP'`。
 
 ### Carthage
 
 1. 在 Cartfile 中添加 `github "ibireme/YYImage"`。
 2. 执行 `carthage update --platform ios` 并将生成的 framework 添加到你的工程。
 3. 导入 \<YYImage/YYImage.h\>。
-4. 注意: carthage framework 并没有包含 webp 组件。如果你需要支持 webp，可以用 CocoaPods 安装，或者手动安装。
+4. 注意：carthage framework 并没有包含 WebP 组件。如果你需要支持 WebP，可以用 CocoaPods 安装，或者手动安装。
 
 ### 手动安装
 
 1. 下载 YYImage 文件夹内的所有内容。
-2. 将 YYModel 内的源文件添加(拖放)到你的工程。
+2. 将 YYImage 内的源文件添加(拖放)到你的工程。
 3. 链接以下 frameworks:
 	* UIKit
 	* CoreFoundation
@@ -338,22 +338,22 @@ YYImage: 功能强大的 iOS 图像框架。<br/>
 	* Accelerate
 	* MobileCoreServices
 	* libz
-4. 如果你需要支持 webp，可以将 `Vendor/WebP.framework`(静态库) 加入你的工程。
-5. 导入 `YYImage.h`。
+4. 导入 `YYImage.h`。
+5. 注意：如果你需要支持 WebP，可以将 `Vendor/WebP.framework`(静态库) 加入你的工程。
 
 文档
 ==============
 你可以在 [CocoaDocs](http://cocoadocs.org/docsets/YYImage/) 查看在线 API 文档，也可以用 [appledoc](https://github.com/tomaz/appledoc) 本地生成文档。
 
 
-关于
+系统要求
 ==============
-该项目最低支持 iOS 6.0。
+该项目最低支持 `iOS 6.0` 和 `Xcode 7.0`。
 
 
 许可证
 ==============
-YYModel 使用 MIT 许可证，详情见 LICENSE 文件。
+YYImage 使用 MIT 许可证，详情见 LICENSE 文件。
 
 
 相关链接
@@ -361,3 +361,4 @@ YYModel 使用 MIT 许可证，详情见 LICENSE 文件。
 [移动端图片格式调研](http://blog.ibireme.com/2015/11/02/mobile_image_benchmark/)<br/>
 
 [iOS 处理图片的一些小 Tip](http://blog.ibireme.com/2015/11/02/ios_image_tips/)
+

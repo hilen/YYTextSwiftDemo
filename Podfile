@@ -7,5 +7,5 @@ inhibit_all_warnings!
 
 target 'YYTextSwiftDemo' do
     pod 'YYImage'
-    pod 'YYText'
+    pod 'YYText', '~> 1.0.3'
 end

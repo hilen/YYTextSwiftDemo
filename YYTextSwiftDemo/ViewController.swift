@@ -55,9 +55,9 @@ class ViewController: UIViewController {
         
         let textLayout = YYTextLayout(container: textContainer, text: attributedString)
         self.leftYYLabel.textLayout = textLayout
-        self.leftYYLabel.width = textLayout.textBoundingSize.width
+        self.leftYYLabel.width = textLayout!.textBoundingSize.width
         
-        let contentHeight = modifier.heightForLineCount(Int(textLayout.rowCount))
+        let contentHeight = modifier.heightForLineCount(Int(textLayout!.rowCount))
         self.leftYYLabel.height = contentHeight
     }
 
