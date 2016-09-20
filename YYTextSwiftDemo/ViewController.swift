@@ -18,18 +18,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let maxWidth: CGFloat = 140
-        let targetSize = CGSizeMake(maxWidth, CGFloat.max)
-        let targetFont: UIFont = UIFont.systemFontOfSize(fontSize)
+        let targetSize = CGSize(width: maxWidth, height: CGFloat.greatestFiniteMagnitude)
+        let targetFont: UIFont = UIFont.systemFont(ofSize: fontSize)
 //        let testString: String = " 😯这是一段测试文字，this is test text. 😷🤖👹🤖👽😾👊🏼🏛🍜🍠◽️☆_🔛🔲🔊🔔🔇🇫🇯🇬🇲☆入:--1😯狗狗不理😷🤖👹🤖👽😾👊🏼🏛🍜🍠◽️☆_🔛🔲🔊🔔🔇🇫🇯🇬🇲☆入:--1😯狗狗不理😷🤖👹🤖👽😾👊🏼🏛🍜🍠◽️☆_🔛🔲🔊🔔🔇🇫🇯🇬🇲☆入:--1😯狗狗不理😷🤖👹🤖👽😾👊🏼🏛🍜🍠◽️☆_🔛🔲🔊🔔🔇🇫🇯🇬🇲☆入:--1😯狗狗不理😷🤖👹🤖👽😾👊🏼🏛🍜🍠◽️☆_🔛🔲🔊🔔🔇🇫🇯🇬🇲☆入:--1😯狗狗不理😷🤖👹🤖👽😾👊🏼🏛🍜🍠◽️☆_🔛🔲🔊🔔🔇🇫🇯🇬🇲☆入:--1😯狗狗不理😷🤖👹🤖👽😾👊🏼🏛🍜🍠◽️☆_🔛🔲🔊🔔🔇🇫🇯🇬🇲☆入:--2222"
         let testString: String = "这是一段测试的数据，测试富文本高度来使用，因为微信有部分内容，123456789 所以就问问你那边做到啥成都, ios uilabel lineheight value,ios uilabel http://www.baidu.com lineheight 010-62998383 value,ios uilabel [呵呵]lineheight value,这是一段测试的数据，测试富文本高度来使用，因为微信有部分内容，123456789 所以就问问你那边做到啥成都, ios uilabel lineheight value,ios uilabel http://www.baidu.com lineheight 010-62998383 value,ios uilabel [呵呵]lineheight value,[呵]这是一段测试的数据，测试富文本高度来使用，因为微信有部分内容，123456789 所以就问问你那边做到啥成都, ios uilabel lineheight value,ios uilabel http://www.baidu.com lineheight 010-62998383 value,ios uilabel [呵呵]lineheight value,这是一段测试的数据，测试富文本高度来使用，因为微信有部分内容，123456789 所以就问问你那边做到啥成都, ios uilabel lineheight value,ios uilabel http://www.baidu.com lineheight 010-62998383 value,ios uilabel [呵呵]lineheight value,[呵]这是一段测试的数据，测试富文本高度来使用，因为微信有部分内容，123456789 所以就问问你那边做到啥成都, ios uilabel lineheight value,ios uilabel http://www.baidu.com lineheight 010-62998383 value,ios uilabel [呵呵]lineheight value,这是一段测试的数据，测试富文本高度来使用，因为微信有部分内容，123456789 所以就问问你那边做到啥成都, ios uilabel lineheight value,ios uilabel http://www.baidu.com lineheight 010-62998383 value,ios uilabel [呵呵]lineheight value,[呵]这是一段测试的数据，测试富文本高度来使用，因为微信有部分内容，123456789 所以就问问你那边做到啥成都, ios uilabel lineheight value,ios uilabel http://www.baidu.com lineheight 010-62998383 value,ios uilabel [呵呵]lineheight value,这是一段测试的数据，测试富文本高度来使用，因为微信有部分内容，123456789 所以就问问你那边做到啥成都, ios uilabel lineheight value,ios uilabel http://www.baidu.com lineheight 010-62998383 value,ios uilabel [呵呵]lineheight value,[呵]这是一段测试的数据，测试富文本高度来使用，因为微信有部分内容，123456789 所以就问问你那边做到啥成都, ios uilabel lineheight value,ios uilabel http://www.baidu.com lineheight 010-62998383 value,ios uilabel [呵呵]lineheight value,这是一段测试的数据，测试富文本高度来使用，因为微信有部分内容，123456789 所以就问问你那边做到啥成都, ios uilabel lineheight value,ios uilabel http://www.baidu.com lineheight 010-62998383 value,ios uilabel [呵呵]lineheight value,[呵]这是一段测试的数据，测试富文本高度来使用，因为微信有部分内容，123456789 所以就问问你那边做到啥成都, ios uilabel lineheight value,ios uilabel http://www.baidu.com lineheight 010-62998383 value,ios uilabel [呵呵]lineheight value,这是一段测试的数据，测试富文本高度来使用，因为微信有部分内容，123456789 所以就问问你那边做到啥成都, ios uilabel lineheight value,ios uilabel http://www.baidu.com lineheight 010-62998383 value,ios uilabel [呵呵]lineheight value,[呵]这是一段测试的数据，测试富文本高度来使用，因为微信有部分内容，123456789 所以就问问你那边做到啥成都, ios uilabel lineheight value,ios uilabel http://www.baidu.com lineheight 010-62998383 value,ios uilabel [呵呵]lineheight value,这是一段测试的数据，测试富文本高度来使用，因为微信有部分内容，123456789 所以就问问你那边做到啥成都, ios uilabel lineheight value,ios uilabel http://www.baidu.com lineheight 010-62998383 value,ios uilabel [呵呵]lineheight value,[呵]这是一段测试的数据，测试富文本高度来使用，因为微信有部分内容，123456789 所以就问问你那边做到啥成都, ios uilabel lineheight value,ios uilabel http://www.baidu.com lineheight 010-62998383 value,ios uilabel [呵呵]lineheight value,这是一段测试的数据，测试富文本高度来使用，因为微信有部分内容，123456789 所以就问问你那边做到啥成都, ios uilabel lineheight value,ios uilabel http://www.baidu.com lineheight 010-62998383 value,ios uilabel [呵呵]lineheight value,[呵]这是一段测试的数据，测试富文本高度来使用，因为微信有部分内容，123456789 所以就问问你那边做到啥成都, ios uilabel lineheight value,ios uilabel http://www.baidu.com lineheight 010-62998383 value,ios uilabel [呵呵]lineheight value,这是一段测试的数据，测试富文本高度来使用，因为微信有部分内容，123456789 所以就问问你那边做到啥成都, ios uilabel lineheight value,ios uilabel http://www.baidu.com lineheight 010-62998383 value,ios uilabel [呵呵]lineheight value,[呵]4"
         
         self.setupYYLabel(testString, targetSize: targetSize, font: targetFont)
         self.setupUILabel(testString, targetSize: targetSize, font: targetFont, maxWidth: maxWidth)
-        self.contentScrollView.contentSize = CGSizeMake(UIScreen.mainScreen().bounds.size.width, self.rightUILabel.height + 200)
-        self.contentScrollView.size = UIScreen.mainScreen().bounds.size
+        self.contentScrollView.contentSize = CGSize(width: UIScreen.main.bounds.size.width, height: self.rightUILabel.height + 200)
+        self.contentScrollView.size = UIScreen.main.bounds.size
     }
     
-    func setupYYLabel(text: String, targetSize: CGSize, font: UIFont) {
+    func setupYYLabel(_ text: String, targetSize: CGSize, font: UIFont) {
         //解析的文字
         let attributedString = TextParser.parseText(text, font: font)!
         //布局
@@ -40,8 +40,8 @@ class ViewController: UIViewController {
         self.leftYYLabel.numberOfLines = 0
         self.leftYYLabel.linePositionModifier = modifier
         self.leftYYLabel.backgroundColor = UIColor ( red: 0.7799, green: 0.7799, blue: 0.7799, alpha: 1.0 )
-        self.leftYYLabel.textVerticalAlignment = YYTextVerticalAlignment.Top
-        self.leftYYLabel.lineBreakMode = .ByWordWrapping
+        self.leftYYLabel.textVerticalAlignment = YYTextVerticalAlignment.top
+        self.leftYYLabel.lineBreakMode = .byWordWrapping
         self.leftYYLabel.displaysAsynchronously = true
         self.leftYYLabel.ignoreCommonProperties = true
         self.leftYYLabel.highlightTapAction = ({containerView, text, range, rect in
@@ -61,22 +61,22 @@ class ViewController: UIViewController {
         self.leftYYLabel.height = contentHeight
     }
 
-    func setupUILabel(text: String, targetSize: CGSize, font: UIFont, maxWidth: CGFloat) {
+    func setupUILabel(_ text: String, targetSize: CGSize, font: UIFont, maxWidth: CGFloat) {
         self.rightUILabel.font = font
         self.rightUILabel.text = text
         self.rightUILabel.numberOfLines = 0
-        self.rightUILabel.lineBreakMode = .ByWordWrapping
-        self.rightUILabel.backgroundColor = UIColor.yellowColor()
+        self.rightUILabel.lineBreakMode = .byWordWrapping
+        self.rightUILabel.backgroundColor = UIColor.yellow
         self.rightUILabel.setFrameWithString(text, width: maxWidth)
         print("rightUILabel:\(self.rightUILabel)")
     }
 
     func debugYYLabel() -> YYTextDebugOption {
         let debugOptions = YYTextDebugOption()
-        debugOptions.baselineColor = UIColor.redColor();
-        debugOptions.CTFrameBorderColor = UIColor.redColor();
-        debugOptions.CTLineFillColor = UIColor ( red: 0.0, green: 0.463, blue: 1.0, alpha: 0.18 )
-        debugOptions.CGGlyphBorderColor = UIColor ( red: 0.9971, green: 0.6738, blue: 1.0, alpha: 0.360964912280702 )
+        debugOptions.baselineColor = UIColor.red;
+        debugOptions.ctFrameBorderColor = UIColor.red;
+        debugOptions.ctLineFillColor = UIColor ( red: 0.0, green: 0.463, blue: 1.0, alpha: 0.18 )
+        debugOptions.cgGlyphBorderColor = UIColor ( red: 0.9971, green: 0.6738, blue: 1.0, alpha: 0.360964912280702 )
         return debugOptions
     }
 
